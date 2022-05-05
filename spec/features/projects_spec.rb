@@ -18,7 +18,7 @@ RSpec.feature "Projects", type: :feature do
         fill_in "Title", with: "Test title"
       end
     end
-
+#
     scenario "should be successful" do
       fill_in "Description", with: "Test description"
       click_button "Create Project"
