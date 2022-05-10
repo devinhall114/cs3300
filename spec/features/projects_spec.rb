@@ -14,7 +14,7 @@ RSpec.feature "Projects", type: :feature do
     before(:each) do
       visit new_project_path
       signInFields
-      within(all("form")[1]) do
+     within("form") do
         fill_in "Title", with: "Test title"
       end
     end
